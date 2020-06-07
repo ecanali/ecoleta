@@ -1,5 +1,5 @@
 # Next-Level-Week-Ecoleta-Web-App
-Projeto baseado no material da Rocketseat
+Web App do front-end ao back-end baseada no material da Rocketseat
 
 # ![Ecoleta](/public/assets/logo.svg)
  
