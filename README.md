@@ -1,40 +1,94 @@
-# Next-Level-Week-Ecoleta-Web-App
-Web App do front-end ao back-end baseada no material da Rocketseat
+<h1 align="center">
+    <img alt="Ecoleta logo" src="./public/assets/logo.svg" width="200px" />
+</h1>
 
-# ![Ecoleta](/public/assets/logo.svg)
- 
- ## Sobre
- 
- Ecoleta é um sistema desenvolvido durante a semana **Next Level Week 1ª edição trilha #Starter** para cadastrar e localizar pontos de coleta de resíduos especiais.
- 
- ### Iniciando o projeto
- 
- * Para iniciar o projeto, primeiro clone este repositório e instale as depedências do projeto utilizando o comando `npm install`.
- * Em seguida, rode o comando `npm start` para ter acesso ao site, e digite o endereço *localhost:3000* em seu navegador.  
- 
- ### Descrição
- 
- As tecnologias que foram utilizadas nesse projeto foram:
- * HTML
- * CSS
- * JavaScript
- * Express
- * SQLite
- * Nunjucks
- 
- Foram trabalhados conceitos de responsividade no CSS, fazendo com que o site seja acessível para Mobile.
- 
- #### Tela Inicial (Web on Desktop + Web on Mobile):
- ![ecoleta](https://scontent.fcpq3-1.fna.fbcdn.net/v/t1.15752-9/101807743_255039609254471_3469859712376708904_n.png?_nc_cat=111&_nc_sid=b96e70&_nc_ohc=az3z_5VoABoAX-D3ny7&_nc_ht=scontent.fcpq3-1.fna&oh=591fb00381602ffe693cd49b6d0763aa&oe=5F010C90)
- 
- #### Tela de cadastro de novos pontos de coleta:
- ![cadastro](https://scontent.fcpq3-1.fna.fbcdn.net/v/t1.15752-9/102579654_202534637502334_7281501403032730314_n.png?_nc_cat=106&_nc_sid=b96e70&_nc_ohc=zMecf5I4ZT0AX83ZHgS&_nc_ht=scontent.fcpq3-1.fna&oh=b8e2686bd84accadc292cfe025617a23&oe=5F02C06C)
- 
- #### Tela (modal) de cadastro realizado com sucesso:
- ![modal](https://scontent.fcpq3-1.fna.fbcdn.net/v/t1.15752-9/102884227_294823111917277_8883752716909890102_n.png?_nc_cat=100&_nc_sid=b96e70&_nc_ohc=_3c9SPHNfhwAX8Os2Rz&_nc_ht=scontent.fcpq3-1.fna&oh=9b4b0fd80c08dd5d1cd403bab9ee66c3&oe=5F006C60)
- 
- #### Tela (modal) de pesquisa:
- ![pesquisa](https://scontent.fcpq3-1.fna.fbcdn.net/v/t1.15752-9/102656984_308204886847468_1395406673853122567_n.png?_nc_cat=110&_nc_sid=b96e70&_nc_ohc=7TnWJEBPTb8AX_9w1rx&_nc_ht=scontent.fcpq3-1.fna&oh=8416120fc328cc6f89b5a3d88fcd5047&oe=5F036ACC)
- 
- #### Tela de listagens de pontos encontrados após pesquisa:
- ![lista](https://scontent.fcpq3-1.fna.fbcdn.net/v/t1.15752-9/102558343_2641962132709182_7656209911859437744_n.png?_nc_cat=100&_nc_sid=b96e70&_nc_ohc=W0KwGxqi3uIAX_q81D-&_nc_ht=scontent.fcpq3-1.fna&oh=0d83dd977ff2fdf45d4c7913b13af124&oe=5F0316AD)
+<p align="center">Site desenvolvido durante a 1ª edição da Next Level Week  trilha Starter para cadastrar e localizar pontos de coleta de resíduos especiais.</p>
+
+---
+
+Tabela de conteúdos
+=================
+<!--ts-->
+   * [Sobre o projeto](#-sobre-o-projeto)
+   * [Tecnologias](#-tecnologias)
+   * [Funcionalidades](#-funcionalidades)
+   * [Layout](#-layout)
+   * [Como baixar e executar o projeto](#-como-baixar-e-executar-o-projeto)
+   * [Licença](#-licenca)
+<!--te-->
+
+---
+
+## Sobre o projeto <a name="-sobre-o-projeto" style="text-decoration:none"></a>
+
+Desenvolvido sem frameworks, o projeto tem o intuito de introdução ao desenvolvimento web. Foram trabalhados conceitos de responsividade no CSS, fazendo com que o site seja acessível para mobile.
+
+---
+
+## Tecnologias <a name="-tecnologias" style="text-decoration:none"></a>
+
+- **[HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)**
+- **[CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)**
+- **[JavaScript](https://www.javascript.com/)**
+- **[Nodejs](https://nodejs.org/en/)**
+- **[Express](https://expressjs.com/pt-br/)**
+- **[Nunjucks](https://github.com/mozilla/nunjucks)**
+- **[Sqlite](https://www.sqlite.org/index.html)**
+
+---
+
+## Funcionalidades <a name="-funcionalidades" style="text-decoration:none"></a>
+
+- [x] Cadastro de pontos de coleta
+- [x] Pesquisa por filtro de pontos de coleta
+
+---
+
+## Layout <a name="-layout" style="text-decoration:none"></a>
+
+### Animação GIF
+<h1 align="center">
+    <img alt="Ecoleta animation" src="public/assets/ecoleta.gif">
+</h1>
+
+### Home
+<img alt="Home" src="./public/assets/indexpg.png" width="800px" />
+
+### Criar ponto de coleta
+<img alt="Create point" src="./public/assets/create-pointpg.png" width="800px" />
+
+### Modal de pesquisa
+<img alt="Search modal" src="./public/assets/modalpg.png" width="800px" />
+
+### Lista de pontos de coleta
+<img alt="Points list" src="./public/assets/pontospg.png" width="800px" />
+
+---
+
+## Como baixar e executar o projeto <a name="-como-baixar-e-executar-o-projeto" style="text-decoration:none"></a>
+
+```bash
+
+# Clone este repositório
+$ git clone https://github.com/ecanali/ecoleta
+
+# Acesse a pasta do projeto pelo terminal/cmd
+$ cd ecoleta
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação
+$ npm start
+
+# O servidor iniciará na porta:3000 - acesse http://localhost:3000
+
+```
+
+---
+
+## Licença <a name="-licenca" style="text-decoration:none"></a>
+
+Este repositório está licenciado pela **MIT LICENSE**. Para informações detalhadas, leia o arquivo [LICENSE](https://github.com/ecanali/ecoleta/blob/master/LICENSE). 
+
+Made with ♥ by Erick Canali :wave:

@@ -1,26 +1,26 @@
 const express = require("express")
 const server = express()
 
-// pegar o banco de dados
+// get database
 const db = require("./database/db")
 
-// config pasta pública
+// configures 'public' folder
 server.use(express.static("public"))
 
-// habilitar uso do req.body na aplicação
+// allows the use of 'req.body' in the application
 server.use(express.urlencoded({ extended: true }))
 
-// utilizando template engine
+// utilizing template engine
 const nunjucks = require("nunjucks")
 nunjucks.configure("src/views/", {
     express: server,
     noCache: true
 })
 
-// config caminhos da minha app
-// pag inicial
-// req: Requisição
-// res: Resposta
+// configures routes of my app
+// home
+// req = Requisition
+// res = Response
 server.get("/", (req, res) => {
     return res.render("index.html")
 })
@@ -30,8 +30,8 @@ server.get("/create-point", (req, res) => {
 })
 
 server.post("/savepoint", (req, res) => {
-    // req.body vem o corpo do form
-    // inserir dados no banco de dados
+    // req.body gets the content of the body of the form
+    // add data into the database
     const query = `
         INSERT INTO places (
             image,
@@ -47,7 +47,7 @@ server.post("/savepoint", (req, res) => {
         req.body.image,
         req.body.name,
         req.body.address,
-        req.body.addres2,
+        req.body.address2,
         req.body.state,
         req.body.city,
         req.body.items
@@ -69,15 +69,14 @@ server.post("/savepoint", (req, res) => {
 
 
 server.get("/search", (req, res) => {
-    
     const search = req.query.search
 
     if(search == "") {
-        // pesquisa vazia
+        // search empty
         return res.render("search-results.html", { total: 0 })
     }
     
-    // pegar os dados do banco de dados
+    // gets data from database
     db.all(`SELECT * FROM places WHERE city like '%${search}%'`, function(err, rows) {
         if(err) {
             return console.log(err)
@@ -85,10 +84,10 @@ server.get("/search", (req, res) => {
 
         const total = rows.length
 
-        // mostrar a página de html com os dados do banco de dados
+        // shows the html page with the data from database
         return res.render("search-results.html", { places: rows, total: total })
     })
 })
 
-// ligar o servidor
+// turns on the server indicating the port
 server.listen(3000)
