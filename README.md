@@ -2,7 +2,7 @@
     <img alt="Ecoleta logo" src="./public/assets/logo.svg" width="200px" />
 </h1>
 
-<p align="center">Site desenvolvido durante a 1ª edição da Next Level Week  trilha Starter para cadastrar e localizar pontos de coleta de resíduos especiais.</p>
+Site desenvolvido durante a 1ª edição da **Next Level Week** trilha Starter da [Rocketseat](https://rocketseat.com.br/) para cadastrar e localizar pontos de coleta de resíduos especiais.
 
 ---
 
