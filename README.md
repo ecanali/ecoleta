@@ -57,7 +57,7 @@ Desenvolvido sem frameworks, o projeto tem o intuito de introdução ao desenvol
 ### Criar ponto de coleta
 <img alt="Create point" src="./public/assets/create-pointpg.png" width="800px" />
 
-### Modal de pesquisa
+### Modal de pesquisa por pontos de coleta
 <img alt="Search modal" src="./public/assets/modalpg.png" width="800px" />
 
 ### Lista de pontos de coleta
